@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Both logos and the title are displayed
+   on a single line. The three elements
+   are positioned on a way that the title is
+   on the middle and the other two are on each
+   side of the page. */
+#headerBox {
+    display: flex; /* Flexible box. */
+    justify-content: space-between; /* This option for maximum expansion. */
+}
+
+/* Dimension for both logo images. 
+   Also "cover" option, so the original images fit
+   the size without any distortion */
+img.imgLogo {
+    width: 10%;
+    height: 8%;
+    object-fit: cover;
+}
+
+/* Font resize*/
+h1 {
+    font-size: 3em;
+}
+
+/* Dimension for the header image. 
+   Also "cover" option, so the original images fit
+   the size without any distortion */
+#headerImg {
+    width: 100%;
+    height: 10%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Small adjustment to keep the links away
+   from the left side of the page. */
+nav  {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    width: 30%;
+}
+
+/* Style for the links in order to appear as buttons. */
+.linkBtn {
+    text-decoration: none;
+    outline: none;
+    width: 20%;
+    height: 15%;
+    background-color: rgb(0, 72, 139);
+    color: #fff;
+    padding: 0.6rem;
+    text-align: center;
+    border-radius: 8%;
+}
+
+/* Small effect when the mouse point over a button. */
+.linkBtn:hover {
+    color: goldenrod;
+}
+
+/* Line to highlight the button when selected by the keyboard. */
+.linkBtn:focus {
+    
+    box-shadow: 0 0 0 0.2rem rgba(37, 89, 201, 0.5);
+}
+
+/* With of the main content (index Page) */
+/* .mainContainer {
+    width: 100%;
+    display: flex;
+    padding-left: 3rem;    
+} */
+
+/* Width of the main content */
+#container {
+    width: 100%;  
+    height: 100%;  
+    display: flex;
+    /* margin-bottom: 100%; */
+}
+
+
+
+/* Size chosen for the page height.
+   This is for the main and side contents */
+article, aside {
+    height: 50%;
+    max-height: 960px;  
+    
+}
+
+/* Width adjustment of the article. */
+article {
+    width: 80%;
+    padding-left: 3rem;
+}
+
+/* Font resize for the header 2.
+   Also some bottom margin. */
+h2 {
+    font-size: 2.4em;
+    margin-bottom: 1%;
+}
+
+h2#sflH2 {
+    font-size: 2rem;
+}
+
+/* Some space under the main image.*/
+#mainImg {
+    margin-bottom: 50px;
+}
+
+/* Some padding to the list (located on the home page) */
+ul {
+    padding-left: 2%;
+}
+
+/* Setting for the paragraphs on the history page */
+.histPar {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 2%;
+}
+
+/* Some space under the figure group. */
+figure {
+    margin-bottom: 5%;
+}
+
+/* Width of the side content. Normally is
+   always smaller. */
+aside {
+    width: 20%;
+    float: right;
+    background-color: navy;
+    color: white;
+    /* align-self: flex-start; */
+    
+}
+
+/* Settings for the image in order to fit the side bar. */
+#sideImg {
+    width: 95%;
+    height: 10%;
+    object-fit: cover;
+    padding-left: 2.5%;
+}
+
+/* Type of text on the side content. */
+#sideImg p {
+    text-align: justify;
+}
+
+/* Some adjustments for the link. */
+#soflSite {
+    color: #fff;
+    text-decoration: none;
+}
+
+#soflSite:hover {
+    text-decoration: underline;
+}
+
+#soflSite:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1rem rgb(255, 234, 169, .5);
+}
+
+#soflSite:visited {
+    color: #ccc;
+}
+
+/* Two images of old ships organized on a flex box. */
+#twoImg {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* Settings for both images to fit on the flex box. */
+.oldSImg {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+}
+
+/* Chosen margin for the footer */
+footer#mainFooter {
+    margin-top: 3%;
+}
+
+footer#histFooter {
+     margin-top: 120%;
+}
+
+/* No outline and no underline on the link. */
+footer a {
+    outline: none;
+    text-decoration: none;
+}
+
+/* Underline when pointed by the mouse. */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Custom outline when selected by the keyboard. */
+footer a:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 67, 167, 0.5);
+}
+
+
+
+
